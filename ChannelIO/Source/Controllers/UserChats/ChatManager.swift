@@ -778,11 +778,11 @@ extension ChatManager: UIImagePickerControllerDelegate, UINavigationControllerDe
     pickerController.showsCancelButton = true
     pickerController.maxSelectableCount = max
     pickerController.assetType = assetType
-    pickerController.assetGroupTypes = [
-      .smartAlbumUserLibrary,
-      .smartAlbumFavorites,
-      .smartAlbumVideos,
-      .albumRegular]
+//    pickerController.assetGroupTypes = [
+//      .smartAlbumUserLibrary,
+//      .smartAlbumFavorites,
+//      .smartAlbumVideos,
+//      .albumRegular]
     
     pickerController.didSelectAssets = { [weak self] (assets: [DKAsset]) in
       self?.sendImages(assets: assets)

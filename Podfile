@@ -12,7 +12,7 @@ target 'ChannelIO' do
   pod 'MGSwipeTableCell'
   pod 'M13ProgressSuite'
   pod 'SVProgressHUD'
-  pod 'CRToast'  
+  pod 'CRToast'
   pod 'PhoneNumberKit'
   pod 'Socket.IO-Client-Swift', '~> 13.1.0'
   pod 'Alamofire', '~> 4.0'
@@ -28,7 +28,6 @@ target 'ChannelIO' do
   pod 'RxCocoa'
   pod 'SnapKit'
   pod 'SwiftyJSON'
-  pod 'Then'
   pod 'HexColors'
   pod 'CHNavBar'
 

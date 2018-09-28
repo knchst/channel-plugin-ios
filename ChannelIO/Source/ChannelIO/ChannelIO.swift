@@ -11,7 +11,6 @@ import CGFloatLiteral
 import ManualLayout
 import Reusable
 import SnapKit
-import Then
 import ReSwift
 import RxSwift
 import UserNotifications

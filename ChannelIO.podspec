@@ -33,13 +33,12 @@ Pod::Spec.new do |s|
   s.swift_version = '4.0'
 
   s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'CoreLocation', 'WebKit'
- 
+
   s.dependency 'Reusable'
   s.dependency 'SnapKit'
   s.dependency 'ManualLayout'
   s.dependency 'HexColors'
   s.dependency 'SwiftyJSON'
-  s.dependency 'Then'
   s.dependency 'ReSwift'
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'RxCocoa', '~> 4.0'
@@ -49,7 +48,7 @@ Pod::Spec.new do |s|
   s.dependency 'DKImagePickerController', '~> 3.8.1'
   s.dependency 'Alamofire'
   s.dependency 'CGFloatLiteral'
-  s.dependency 'Socket.IO-Client-Swift', '~> 13.1.0' 
+  s.dependency 'Socket.IO-Client-Swift', '~> 13.1.0'
   s.dependency 'CHSlackTextViewController'
   s.dependency 'MGSwipeTableCell'
   s.dependency 'M13ProgressSuite'

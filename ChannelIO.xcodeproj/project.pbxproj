@@ -32,6 +32,7 @@
 		22AE76B220E341CB00C18355 /* Mute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE76B120E341CB00C18355 /* Mute.swift */; };
 		22AE76B920E347C700C18355 /* mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22AE76B820E347C700C18355 /* mute.caf */; };
 		22F0ED9220B53C55008924C1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0ED9120B53C55008924C1 /* Models.swift */; };
+		27F75205215DC6CE00CC0BD4 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F75204215DC6CE00CC0BD4 /* Then.swift */; };
 		650D7C351E724AD7007DE358 /* LocalMessageFactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D7C341E724AD7007DE358 /* LocalMessageFactorTests.swift */; };
 		650D7C3B1E72546B007DE358 /* MessagesStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D7C3A1E72546B007DE358 /* MessagesStateTests.swift */; };
 		650D7C3D1E7254B2007DE358 /* ManagersStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D7C3C1E7254B2007DE358 /* ManagersStateTests.swift */; };
@@ -305,6 +306,7 @@
 		22AE76B120E341CB00C18355 /* Mute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mute.swift; sourceTree = "<group>"; };
 		22AE76B820E347C700C18355 /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = mute.caf; path = Assets/mute.caf; sourceTree = "<group>"; };
 		22F0ED9120B53C55008924C1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		27F75204215DC6CE00CC0BD4 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		2D031DBBCA1028953145D1B6 /* Pods-ChannelIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChannelIO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChannelIO/Pods-ChannelIO.debug.xcconfig"; sourceTree = "<group>"; };
 		3042303E08BB985C3D1774FE /* Pods_ChannelIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChannelIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4060180CA545FF92875DFF9A /* Pods-CHPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHPlugin/Pods-CHPlugin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -870,6 +872,7 @@
 				6593788320B26ABC00230248 /* Notifications.swift */,
 				222086B71FBAAD37002CFA88 /* CHAnimations.swift */,
 				22AE76B120E341CB00C18355 /* Mute.swift */,
+				27F75204215DC6CE00CC0BD4 /* Then.swift */,
 			);
 			name = Utils;
 			path = Source/Utils;
@@ -1244,13 +1247,13 @@
 				TargetAttributes = {
 					14D2AA731E24AE06006FEE22 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8278Q64QFC;
+						DevelopmentTeam = 3AD34YEUE5;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					14D2AA7C1E24AE07006FEE22 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8278Q64QFC;
+						DevelopmentTeam = 3AD34YEUE5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1370,11 +1373,18 @@
 				"${BUILT_PRODUCTS_DIR}/CHNavBar/CHNavBar.framework",
 				"${BUILT_PRODUCTS_DIR}/CHPhotoBrowser/CHPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/CHSlackTextViewController/CHSlackTextViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework",
 				"${BUILT_PRODUCTS_DIR}/CRToast/CRToast.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/DKCamera/DKCamera.framework",
 				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/DKPhotoGallery/DKPhotoGallery.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
 				"${BUILT_PRODUCTS_DIR}/M13ProgressSuite/M13ProgressSuite.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
@@ -1392,7 +1402,6 @@
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1404,11 +1413,18 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHNavBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHSlackTextViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImageEditor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRToast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKCamera.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKPhotoGallery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13ProgressSuite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
@@ -1426,7 +1442,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1462,6 +1477,7 @@
 				6597935B1FA716CB00840F6A /* UserChatsViewController.swift in Sources */,
 				6597935C1FA716CB00840F6A /* UserChatViewController.swift in Sources */,
 				6549CFB2207B6C6A000091D2 /* CheckableLabelCell.swift in Sources */,
+				27F75205215DC6CE00CC0BD4 /* Then.swift in Sources */,
 				655A280420B2699700935C1F /* CompleteActionView.swift in Sources */,
 				65CB1424206A02F200E456B5 /* FileMessageCell.swift in Sources */,
 				6597935D1FA716CB00840F6A /* Array+Extensions.swift in Sources */,
@@ -1821,7 +1837,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: apple@zoyi.co (R4VN26FWUN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8278Q64QFC;
+				DEVELOPMENT_TEAM = 3AD34YEUE5;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1863,7 +1879,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: apple@zoyi.co (R4VN26FWUN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8278Q64QFC;
+				DEVELOPMENT_TEAM = 3AD34YEUE5;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1899,7 +1915,7 @@
 			baseConfigurationReference = 7D758F40EFD6FB632F31F612 /* Pods-ChannelIOTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 8278Q64QFC;
+				DEVELOPMENT_TEAM = 3AD34YEUE5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",
@@ -1918,7 +1934,7 @@
 			baseConfigurationReference = 00803488A5019FEA40B484B1 /* Pods-ChannelIOTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 8278Q64QFC;
+				DEVELOPMENT_TEAM = 3AD34YEUE5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",

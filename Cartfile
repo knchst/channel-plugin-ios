@@ -3,7 +3,6 @@ github "zoyi/SnapKit"
 github "isair/ManualLayout"
 github "mRs-/HexColors"
 github "SwiftyJSON/SwiftyJSON"
-github "intoxicated/Then"
 github "ReSwift/ReSwift"
 github "ReactiveX/RxSwift" ~> 4.0
 github "Hearst-DD/ObjectMapper" ~> 3.3
